@@ -1,5 +1,6 @@
+
 class PostsController < ApplicationController
-  before_action :set_post, only: %i[ show edit update destroy ]
+  before_action :set_post, only: %i[ show edit update destroy download]
 
   # GET /posts or /posts.json
   def index
@@ -54,6 +55,13 @@ class PostsController < ApplicationController
       format.html { redirect_to posts_url, notice: "Post was successfully destroyed." }
       format.json { head :no_content }
     end
+  end
+
+  def download
+    file = my_html = @post.body.body.to_html
+    document = Htmltoword::Document.create(my_html)
+    Htmltoword::Document.create_and_save(my_html, 'output.docx')
+    send_file 'output.docx'
   end
 
   private

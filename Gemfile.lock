@@ -1,7 +1,6 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    Html2Docx (0.2.0)
     actioncable (6.1.4)
       actionpack (= 6.1.4)
       activesupport (= 6.1.4)
@@ -83,6 +82,10 @@ GEM
     ffi (1.15.3)
     globalid (0.5.2)
       activesupport (>= 5.0)
+    htmltoword (1.1.1)
+      actionpack
+      nokogiri
+      rubyzip (>= 1.0)
     i18n (1.8.10)
       concurrent-ruby (~> 1.0)
     jbuilder (2.11.2)
@@ -203,10 +206,10 @@ PLATFORMS
   arm64-darwin-20
 
 DEPENDENCIES
-  Html2Docx
   bootsnap (>= 1.4.4)
   byebug
   capybara (>= 3.26)
+  htmltoword
   jbuilder (~> 2.7)
   listen (~> 3.3)
   puma (~> 5.0)
