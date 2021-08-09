@@ -1,24 +1,10 @@
-# README
+# Action Text playground
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a playground to test things on action text.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+To use:
+```git clone git@github.com:barangerbenjamin/test-html-to-docx.git```
+```cd test-html-to-docx```
+```rails db:create```
+```bundle && yarn```
+```rails s```
