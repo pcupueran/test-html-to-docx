@@ -12,6 +12,8 @@ To use:
 
 ```bundle && yarn```
 
+```bin/rails db:migrate RAILS_ENV=development```
+
 ```rails s```
 
 Go to [posts#index](http://localhost/posts)
