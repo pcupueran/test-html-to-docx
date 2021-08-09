@@ -13,3 +13,5 @@ To use:
 ```bundle && yarn```
 
 ```rails s```
+
+Go to [posts#index](http://localhost/posts)
