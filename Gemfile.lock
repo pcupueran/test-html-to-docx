@@ -1,6 +1,7 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    Html2Docx (0.2.0)
     actioncable (6.1.4)
       actionpack (= 6.1.4)
       activesupport (= 6.1.4)
@@ -202,6 +203,7 @@ PLATFORMS
   arm64-darwin-20
 
 DEPENDENCIES
+  Html2Docx
   bootsnap (>= 1.4.4)
   byebug
   capybara (>= 3.26)
